@@ -13,6 +13,24 @@ zone2
 ## Servers and Clusters
 
 ### Table 1.1 Summary
+
+|  Asset | Purpose  |  Size | Qty  | DR  |   |   |   |   |   |
+|---|---|---|---|---|---|---|---|---|---|
+|  vpc 1 | vpc 1 for main network  |  two az us-east-2a","us-east-2b |  1 |   |   |   |   |   |   |
+| vpc 2  | vpc 2 for DR  |  two az "us-west-1b","us-west-1c" | 1  |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |
+
+
+
+
+
+
 | Asset      | Purpose           | Size                                                                   | Qty                                                             | DR                                                                                                           |
 |------------|-------------------|------------------------------------------------------------------------|-----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
 | Asset name | Brief description | AWS size eg. t3.micro (if applicable, not all assets will have a size) | Number of nodes/replicas or just how many of a particular asset | Identify if this asset is deployed to DR, replicated, created in multiple locations or just stored elsewhere |
