@@ -22,7 +22,8 @@ zone2
 |  EKS nodegroup | HA of workers/nodes | t3.medium | 2 | should have A DR |
 | VPC 1 | vpc 1 for main network on three AZ or atleast 2  | two az us-east-2a","us-east-2b  | 1 | another vpc on another region
 | vpc 2 | vpc 2 for DR on three AZ or atleast 2 | two az "us-west-1b","us-west-1c" | 1 | this is the DR
-
+| ALB 1 | ALB 1 on the first region | 1 on three AZs or two | 1 | needs DR on the other region
+| ALB 2 | ALB 2 on the 2nd region | 1 on three AZs or two | 1 | This is ALB DR
 ### Descriptions
 More detailed descriptions of each asset identified above.
 
