@@ -25,5 +25,7 @@ sum(rate(flask_http_request_total{job="ec2"}[5m]))
 ### The error budget is 20%
 
 ```
-1 - ((1 - (sum(increase(flask_http_request_total{job="ec2", status="200"}[1h])) by (verb)) / sum(increase(flask_http_request_total{job="ec2"}[1h])) by (verb)) / (1 - .80))
+1 - ((1 - (sum(increase(flask_http_request_total{job="ec2", status="200"}[1h])) by (verb)) 
+/ 
+sum(increase(flask_http_request_total{job="ec2"}[1h])) by (verb)) / (1 - .80))
 ```
