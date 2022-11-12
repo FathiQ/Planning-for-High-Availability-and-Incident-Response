@@ -3,6 +3,13 @@
 ## AWS Zones
 Identify your zones here
 
+zone1
+. us-east-2
+. us-west-1
+
+zone2
+. us-west-1
+
 ## Servers and Clusters
 
 ### Table 1.1 Summary
