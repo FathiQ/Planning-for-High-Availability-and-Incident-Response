@@ -18,7 +18,8 @@ zone2
 | Asset      | Purpose           | Size                                                                   | Qty                                                             | DR                                                                                                           |
 |------------|-------------------|------------------------------------------------------------------------|-----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
 | Asset name | Brief description | AWS size eg. t3.micro (if applicable, not all assets will have a size) | Number of nodes/replicas or just how many of a particular asset | Identify if this asset is deployed to DR, replicated, created in multiple locations or just stored elsewhere |
-|  vpc 1 | vpc 1 for main network | 1 |two az us-east-2a","us-east-2bt | N/A |
+|  vpc 1 | vpc 1 for main network | 1 |two az us-east-2a","us-east-2b | N/A |
+|  vpc 2 | vpc 2 for DR network | 1 |two az "us-west-1b","us-west-1c" | N/A |
 
 ### Descriptions
 More detailed descriptions of each asset identified above.
