@@ -24,6 +24,9 @@ zone2
 | vpc 2 | vpc 2 for DR on three AZ or atleast 2 | two az "us-west-1b","us-west-1c" | 1 | this is the DR
 | ALB 1 | ALB 1 on the first region | 1 on three AZs or two | 1 | needs DR on the other region
 | ALB 2 | ALB 2 on the 2nd region | 1 on three AZs or two | 1 | This is ALB DR
+| RDS 1 | RDS 1 on the first region (Main) | 2 nodes on cluster | 1 | will be replicated to another cluster on the other region
+| RDS 2 | RDS 2 on the 2nd region (replication of the main cluster on the first region) | 2 nodes on cluster on diff az | 1 | the replication of main RDS
+
 ### Descriptions
 More detailed descriptions of each asset identified above.
 
