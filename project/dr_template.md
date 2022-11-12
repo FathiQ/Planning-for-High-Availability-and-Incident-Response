@@ -14,7 +14,7 @@ zone2
 
 ### Table 1.1 Summary
 
-|  Asset | Purpose  |  Size | Qty  | DR  |   |   |   |   |   |
+|  Asset | Purpose  |  Size | Qty  | DR  |
 |---|---|---|---|---|---|---|---|---|---|
 |  vpc 1 | vpc 1 for main network  |  two az us-east-2a","us-east-2b |  1 |   |   |   |   |   |   |
 | vpc 2  | vpc 2 for DR  |  two az "us-west-1b","us-west-1c" | 1  |   |   |   |   |   |   |
