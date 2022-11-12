@@ -49,4 +49,4 @@ You won't actually perform these steps, but write out what you would do to "fail
 1. change dns for the another ALB of the app.
 2. To preform application failover this will happened from ALB which if the health check not good or something going wrong then will fail over to the another region alb.
 3. for RDS we need to go to console then RDS to click on RDS failover for.
-4. 
+
