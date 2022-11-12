@@ -40,5 +40,13 @@ More detailed descriptions of each asset identified above.
 ### Pre-Steps:
 List steps you would perform to setup the infrastructure in the other region. It doesn't have to be super detailed, but high-level should suffice.
 
+I will use IaC to setup the other region it will starts setuping an new vpc and new subnets with tagging for the EKS and ALBs, it will create EKS cluster have 2 nodes, and 3 ec2 one on each region. RDS cluster with two nodes for the replication of the source cluster with the targeted retintion for backups.
+FOR ALB its will create target group and add the resources that i want to create ALB for then add target group to ALB.
+
 ## Steps:
 You won't actually perform these steps, but write out what you would do to "fail-over" your application and database cluster to the other region. Think about all the pieces that were setup and how you would use those in the other region
+
+1. change dns for the another ALB of the app.
+2. To preform application failover this will happened from ALB which if the health check not good or something going wrong then will fail over to the another region alb.
+3. for RDS we need to go to console then RDS to click on RDS failover for.
+4. 
