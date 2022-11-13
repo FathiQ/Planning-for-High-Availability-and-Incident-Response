@@ -29,7 +29,7 @@ data "aws_instances" "ubuntu" {
 
   filter {
     name   = "instance.group-id"
-    values = [output.ec2_sg]
+    values = ["sg-05ada9f14ff400042"]
   }
 
   instance_state_names = ["running"]
@@ -86,33 +86,33 @@ resource "aws_lb_target_group" "project_ec2_alb_tg" {
   }
 }
 
-resource "aws_lb_target_group_attachment" "project_ec2_tg_attach_1" {
-  target_group_arn = aws_lb_target_group.project_ec2_alb_tg.arn
-  target_id        = data.aws_instances.ubuntu.ids[0]
-  port             = 80
+# resource "aws_lb_target_group_attachment" "project_ec2_tg_attach_1" {
+#   target_group_arn = aws_lb_target_group.project_ec2_alb_tg.arn
+#   target_id        = data.aws_instances.ubuntu.ids[0]
+#   port             = 80
 
-  depends_on = [
-    data.aws_instances.ubuntu,
-    aws_lb.project_ec2_alb,
-  ]
-}
+#   depends_on = [
+#     data.aws_instances.ubuntu,
+#     aws_lb.project_ec2_alb,
+#   ]
+# }
 
-resource "aws_lb_target_group_attachment" "project_ec2_tg_attach_2" {
-  target_group_arn = aws_lb_target_group.project_ec2_alb_tg.arn
-  target_id        = data.aws_instances.ubuntu.ids[1]
-  port             = 80
-  depends_on = [
-    data.aws_instances.ubuntu,
-    aws_lb.project_ec2_alb
-  ]
-}
+# resource "aws_lb_target_group_attachment" "project_ec2_tg_attach_2" {
+#   target_group_arn = aws_lb_target_group.project_ec2_alb_tg.arn
+#   target_id        = data.aws_instances.ubuntu.ids[1]
+#   port             = 80
+#   depends_on = [
+#     data.aws_instances.ubuntu,
+#     aws_lb.project_ec2_alb
+#   ]
+# }
 
-resource "aws_lb_target_group_attachment" "project_ec2_tg_attach_3" {
-  target_group_arn = aws_lb_target_group.project_ec2_alb_tg.arn
-  target_id        = data.aws_instances.ubuntu.ids[2]
-  port             = 80
-  depends_on = [
-    data.aws_instances.ubuntu,
-    aws_lb.project_ec2_alb
-  ]
-}
+# resource "aws_lb_target_group_attachment" "project_ec2_tg_attach_3" {
+#   target_group_arn = aws_lb_target_group.project_ec2_alb_tg.arn
+#   target_id        = data.aws_instances.ubuntu.ids[2]
+#   port             = 80
+#   depends_on = [
+#     data.aws_instances.ubuntu,
+#     aws_lb.project_ec2_alb
+#   ]
+# }
