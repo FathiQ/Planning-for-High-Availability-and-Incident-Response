@@ -29,7 +29,7 @@ data "aws_instances" "ubuntu" {
 
   filter {
     name   = "instance.group-id"
-    values = ["sg-05ada9f14ff400042"]
+    values = [output.ec2_sg]
   }
 
   instance_state_names = ["running"]
