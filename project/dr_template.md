@@ -4,7 +4,7 @@
 Identify your zones here
 
 zone1
-. us-east-2a , us-east-2b
+. us-east-2a , us-east-2b, us-east-2c
 
 zone2
 . us-west-1b, us-west-1a
