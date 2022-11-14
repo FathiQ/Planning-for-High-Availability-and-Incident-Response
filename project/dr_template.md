@@ -4,11 +4,10 @@
 Identify your zones here
 
 zone1
-. us-east-2
-. us-west-1
+. us-east-2a , us-east-2b
 
 zone2
-. us-west-1
+. us-west-1b, us-west-1a
 
 ## Servers and Clusters
 
