@@ -48,4 +48,8 @@ You won't actually perform these steps, but write out what you would do to "fail
 1. change dns for the another ALB of the app.
 2. To preform application failover this will happened from ALB which if the health check not good or something going wrong then will fail over to the another region alb.
 3. for RDS we need to go to console then RDS to click on RDS failover for.
+4. Point your DNS to your secondary region
+5. This can be done with a name provider like Amazon route 53
+6. Failover your database replication instances to another region
+7. Manually force the secondary region to become primary at the database level, or Automatically failover the database by health checks
 
