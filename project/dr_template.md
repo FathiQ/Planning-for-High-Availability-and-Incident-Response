@@ -34,6 +34,7 @@ More detailed descriptions of each asset identified above.
 3. Two have DR site to host all eks, EC2s and RDS should have two VPCs one on the first main region and the 2nd on DR region thats spans on three zones atleast but on our case regarding to ec2 should have 3 nodes so we need to have them on diff az for more HA.
 4. ALB spans on diff AZs for the first region and another one on the 2nd region to have more HA ALB.
 5. RDS on the first region shoud have two nodes under the cluster and we need to have another RDS cluster running on the 2nd region this is will be the DR side for the replication of the first site.
+6. VPC, Two vpc one on each zone, us-west-1,us-east-2 the vpc need to create virtual network on both regions to allow resources created and assign ip address for each resource like ecs, rds ...
 
 ## DR Plan
 ### Pre-Steps:
